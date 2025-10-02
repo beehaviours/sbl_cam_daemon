@@ -27,6 +27,7 @@ distclean:
 
 install:
 	install -D -m 755 build/sbl_cam_daemon  $(DESTDIR)$(PREFIX)/bin/sbl_cam_daemon
+	install -D -m 755 scripts/sbl_start_acqui.sh  $(DESTDIR)$(PREFIX)/bin/sbl_start_acqui
 
 .PHONY: all clean distclean install
 
